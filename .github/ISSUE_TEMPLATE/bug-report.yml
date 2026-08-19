@@ -1,0 +1,72 @@
+name: 功能异常反馈
+description: 反馈 Token Platform 测试过程中遇到的错误或异常
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢参与测试。请完整填写以下信息，切勿提交 API Key、密码、Cookie 或完整凭证。
+  - type: input
+    id: account
+    attributes:
+      label: 测试账号
+      description: 填写测试所用账号邮箱；如涉及隐私，可仅填写可识别的部分。
+      placeholder: example***@example.com
+    validations:
+      required: true
+  - type: input
+    id: occurred_at
+    attributes:
+      label: 问题发生时间
+      description: 请包含时区，便于定位日志。
+      placeholder: 2026-08-19 14:30（北京时间）
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: 模型或功能
+      placeholder: 例如 bytedance/seedance-2.0
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 按顺序说明如何稳定复现问题。
+      placeholder: |
+        1. 打开……
+        2. 填写……
+        3. 点击……
+    validations:
+      required: true
+  - type: textarea
+    id: parameters
+    attributes:
+      label: 请求参数
+      description: 请先脱敏，不要包含 API Key、密码、Cookie 或完整凭证。
+      render: json
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+  - type: input
+    id: request_id
+    attributes:
+      label: 请求日志 ID
+      description: 如用户日志页面中可以复制请求 ID，请填写在这里。
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或补充信息
+      description: 可直接拖入截图；请先遮挡敏感信息。
