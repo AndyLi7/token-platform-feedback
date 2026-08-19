@@ -1,2 +1,14 @@
-# token-platform-feedback
-Token Platform 测试反馈与问题跟踪（不包含源码）
+# Token Platform Feedback
+
+此仓库仅用于 Token Platform 测试反馈和问题跟踪，不包含产品源码。
+
+## 提交问题
+
+请点击仓库顶部的 **Issues → New issue**，选择“功能异常反馈”模板并完整填写。
+
+提交前请注意：
+
+- 不要粘贴 API Key、密码、Cookie 或完整凭证。
+- 请提供问题发生时间、测试账号、模型名称和请求日志 ID。
+- 请求参数需要脱敏；截图中如有敏感信息，请先遮挡。
+- 一个 Issue 只描述一个独立问题，方便跟踪修复。
