@@ -1,14 +1,15 @@
 # Token Platform Feedback
 
-此仓库仅用于 Token Platform 测试反馈和问题跟踪，不包含产品源码。
+This repository is used only for Token Platform testing feedback and issue tracking. It does not contain any product source code.
 
-## 提交问题
+## Report an issue
 
-请点击仓库顶部的 **Issues → New issue**，选择“功能异常反馈”模板并完整填写。
+Open **Issues → New issue**, select the **Bug report** template, and complete all required fields.
 
-提交前请注意：
+Before submitting:
 
-- 不要粘贴 API Key、密码、Cookie 或完整凭证。
-- 请提供问题发生时间、测试账号、模型名称和请求日志 ID。
-- 请求参数需要脱敏；截图中如有敏感信息，请先遮挡。
-- 一个 Issue 只描述一个独立问题，方便跟踪修复。
+- Do not include API keys, passwords, cookies, access tokens, or full credentials.
+- Use only a masked account identifier, such as `an***@example.com`.
+- Include the time of occurrence, model name, reproduction steps, and request log ID when available.
+- Redact sensitive information from request parameters and screenshots.
+- Submit one problem per issue so that each fix can be tracked independently.
